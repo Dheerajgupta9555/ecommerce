@@ -1,4 +1,3 @@
-/* Reset & base styles */
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +85,7 @@ main {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  height: 100%; /* Ensures all cards fill height evenly */
+  height: 100%; 
 }
 
 .card:hover {
@@ -95,8 +94,8 @@ main {
 
 .card img {
   width: 100%;
-  height: 200px; /* Increased height for uniformity */
-  object-fit: cover; /* Keeps image proportional */
+  height: 200px; 
+  object-fit: cover; 
 }
 
 /* Card content */
