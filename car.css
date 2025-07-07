@@ -1,0 +1,134 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: #254679;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+header {
+  background-color: #1f1f38;
+  padding: 20px 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeDown 1s ease-in-out;
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f9ca24;
+}
+
+/* Section */
+main {
+  padding: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.product-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 100%; /* Ensures all cards fill height evenly */
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Increased height for uniformity */
+  object-fit: cover; /* Keeps image proportional */
+}
+
+/* Card content */
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card button {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px auto 20px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background-color: #f9ca24;
+  color: #1a1a2e;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
