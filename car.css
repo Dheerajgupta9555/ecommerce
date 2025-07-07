@@ -132,3 +132,22 @@ footer {
   text-align: center;
   padding: 20px;
 }
+body {
+    background-color: rgb(7, 7, 7);
+  }
+
+  @media (max-width: 600px) {
+  body {
+    background-color: rgb(14, 15, 16);
+  }
+}
+ @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+   @media (min-width: 1025px) {
+    body {
+      background-color: black;
+    }
+  }
